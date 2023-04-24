@@ -1,21 +1,21 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
-import * as S from "./styled";
+import Box from "../common/Box/Box";
 
 type LayoutProps = {};
 
 const Layout: React.FC<LayoutProps> = ({}) => {
   return (
-    <S.AppContainer>
+    <Box>
       <Navbar />
-      <S.MainContainer>
+      <Box row justifyCenter>
         <Outlet />
-      </S.MainContainer>
-      <S.FooterContainer>
+      </Box>
+      <Box row justifyCenter>
         <Footer />
-      </S.FooterContainer>
-    </S.AppContainer>
+      </Box>
+    </Box>
   );
 };
 

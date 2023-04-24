@@ -15,16 +15,15 @@ export const Container = styled.div`
 
 export const TitleContainer = styled.div`
   margin-right: 20px;
+  min-height: 40px;
 
   ${breakpoints.mobile} {
-    margin-right: 0;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+    margin: 0 auto;
   }
 
   h1 {
     margin: 0;
+    font-size: 32px;
   }
 `;
 
@@ -35,7 +34,7 @@ export const Modal = styled.div<Backdrop>`
   position: absolute;
   top: 0;
   left: 0;
-  right: 50%;
+  right: 35%;
   bottom: 0;
   z-index: 100;
   ${breakpoints.laptop} {
@@ -60,6 +59,8 @@ export const ModalBackdrop = styled.div<Backdrop>`
 `;
 
 export const BurgerContainer = styled.div`
+  position: absolute;
+  left: 20px;
   ${breakpoints.laptop} {
     display: none;
   }

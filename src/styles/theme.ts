@@ -21,10 +21,6 @@ html {
   body {
     margin: 0;
   }
-
-  #root {
-    margin: 0 auto;
-}
 `;
 
 export default GlobalStyles;
