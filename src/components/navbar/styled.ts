@@ -1,21 +1,32 @@
 import styled from "styled-components";
 import { breakpoints, theme } from "../../styles/theme";
 
-export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 20px;
-  background-color: ${theme.colors.primary};
-`;
-
-export const title = styled.h1``;
-
-export const TitleContainer = styled.div``;
-
 type Backdrop = {
   isModalOpen: boolean;
 };
+
+export const Container = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: ${theme.colors.primary};
+`;
+
+export const TitleContainer = styled.div`
+  margin-right: 20px;
+
+  ${breakpoints.mobile} {
+    margin-right: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  h1 {
+    margin: 0;
+  }
+`;
 
 export const Modal = styled.div<Backdrop>`
   display: ${({ isModalOpen }) => (isModalOpen ? "block" : "none")};
@@ -58,4 +69,5 @@ export const NavLinksContainer = styled.div`
   ${breakpoints.mobile} {
     display: none;
   }
+  width: 100%;
 `;

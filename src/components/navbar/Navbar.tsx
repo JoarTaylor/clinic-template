@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Burger from "../../assets/icons/burger";
-import Regionsthlm from "../../assets/icons/regionsthml";
 import NavLinks from "../NavLinks/NavLinks";
 import * as S from "./styled";
 
@@ -25,13 +24,12 @@ const Navbar: React.FC<navbarProps> = ({}) => {
         </S.BurgerContainer>
         <S.TitleContainer>
           <Link style={{ textDecoration: "none", color: "white" }} to="/">
-            <S.title>Rehab</S.title>
+            <h1>Rehab</h1>
           </Link>
         </S.TitleContainer>
         <S.NavLinksContainer>
           <NavLinks />
         </S.NavLinksContainer>
-          <Regionsthlm />
       </S.Container>
     </>
   );
