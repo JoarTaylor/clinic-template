@@ -15,7 +15,6 @@ export const Container = styled.div`
 
 export const TitleContainer = styled.div`
   margin-right: 20px;
-  min-height: 40px;
 
   ${breakpoints.mobile} {
     margin: 0 auto;
@@ -30,7 +29,7 @@ export const TitleContainer = styled.div`
 export const Modal = styled.div<Backdrop>`
   display: ${({ isModalOpen }) => (isModalOpen ? "block" : "none")};
   background-color: ${theme.colors.primary};
-  padding: 20px;
+  padding: 80px 20px 20px 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -64,6 +63,7 @@ export const BurgerContainer = styled.div`
   ${breakpoints.laptop} {
     display: none;
   }
+  z-index: 10000;
 `;
 
 export const NavLinksContainer = styled.div`

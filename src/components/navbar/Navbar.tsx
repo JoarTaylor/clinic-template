@@ -20,7 +20,7 @@ const Navbar: React.FC<navbarProps> = ({}) => {
       </S.Modal>
       <S.Container>
         <S.BurgerContainer onClick={toggleBurgerMenu}>
-          <Burger />
+          <Burger pathD={isModalOpen ? "M1 7h14M1 1h8M1 13h18" : "M1 7h18M1 1h18M1 13h18"}/>
         </S.BurgerContainer>
         <S.TitleContainer>
           <Link style={{ textDecoration: "none", color: "white" }} to="/">
