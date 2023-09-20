@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
-type ClinicProps = {
-
-}
+type ClinicProps = {};
 
 const Clinic: React.FC<ClinicProps> = ({}) => {
-        return (<>Clinic</>);
-}
+  return <>ClinicS</>;
+};
 
-export default Clinic
+export default Clinic;
