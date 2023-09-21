@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
-type HomeProps = {
-
-}
+type HomeProps = {};
 
 const Home: React.FC<HomeProps> = ({}) => {
-        return (<>Home</>);
-}
+  return <>Homes</>;
+};
 
-export default Home
+export default Home;
